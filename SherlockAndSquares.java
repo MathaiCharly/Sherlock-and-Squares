@@ -20,11 +20,12 @@ class Result {
     public static int squares(int a, int b) {
     // Write your code here
     int s=0;
+    int j=(int)Math.sqrt(a);
+    int k=(int)Math.sqrt(b);
     int i;
-    for(i=a;i<=b;i++)
+    for(i=j;i<=k;i++)
     {
-        double d=Math.sqrt(i);
-        if(Math.floor(d)==d)
+        if((i*i)>=a && (i*i)<=b)
         {
             s=s+1;
         }
